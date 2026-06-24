@@ -16,7 +16,7 @@ export function FeaturedVideo() {
   href={featuredVideo.href}
   aria-label={`Watch ${featuredVideo.title}`}
 >
-  <img src={featuredVideo.thumbnail} alt="" />
+  <img className="video-thumb__image" src={featuredVideo.thumbnail} alt="" />
 
   <span className="video-thumb__play" aria-hidden="true">
     <img src="/assets/icons/youtube.svg" alt="" />

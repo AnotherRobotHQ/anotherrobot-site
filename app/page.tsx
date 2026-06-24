@@ -46,10 +46,13 @@ export default function Home() {
   return (
     <main className="page-shell">
       <header className="brand-header" aria-label="AnotherRobot home">
-        <a className="brand-lockup" href="/" aria-label="AnotherRobot home">
-          <Image src="/assets/logo-horizontal.svg" alt="AnotherRobot" width={640} height={132} priority />
-        </a>
-      </header>
+  <a className="brand-lockup" href="/" aria-label="AnotherRobot home">
+    <picture className="brand-picture">
+      <source media="(max-width: 820px)" srcSet="/assets/logo-mobile.svg" />
+      <img className="brand-logo" src="/assets/logo-horizontal.svg" alt="AnotherRobot" />
+    </picture>
+  </a>
+</header>
 
       <section className="hero" aria-labelledby="hero-title">
         <div className="hero__copy">
